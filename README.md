@@ -1,12 +1,10 @@
 # tpl
 Gulp | Jade · Coffescript · SASS
 
-Install 
+Install Node modules
 
 sudo npm install -g gulp
-
 npm install --save-dev gulp-coffee
-
 npm install --save-dev gulp-connect
 
 npm install --save-dev gulp-imagemin
