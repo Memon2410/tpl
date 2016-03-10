@@ -22,7 +22,7 @@ npm install --save-dev gulp-jshint
 npm install orchestrator
 
 
-
+From Terminal --> cd .../folder
 
 gulp images --> folder "images" optimized
 
