@@ -22,3 +22,9 @@ npm install --save-dev gulp-jshint
 npm install orchestrator
 
 
+
+gulp images --> images optimized
+gulp watch --> Compiled (Jade · Coffeescript · SASS)
+gulp webserver --> localhost:8080
+
+
