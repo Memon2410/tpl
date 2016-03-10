@@ -23,8 +23,11 @@ npm install orchestrator
 
 
 
-gulp images --> images optimized
+
+gulp images --> folder "images" optimized
+
 gulp watch --> Compiled (Jade · Coffeescript · SASS)
+
 gulp webserver --> localhost:8080
 
 
