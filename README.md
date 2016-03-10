@@ -19,6 +19,6 @@ npm install --save-dev gulp-uglify
 
 npm install --save-dev gulp-jshint
 
-npm install --save-dev gulp-orchestrator
+npm install orchestrator
 
 
