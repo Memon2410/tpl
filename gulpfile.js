@@ -66,11 +66,6 @@ gulp.task('sass', function () {
 
 /* Optimización de imágenes
 -------------------------------------------------------------------------------*/
-/*gulp.task('images', function () {
-  return gulp.src(path.images)
-    .pipe(imagemin({ progressive: true }))
-    .pipe(gulp.dest(path.imgmin))
-});*/
 gulp.task('images', function() {
   return gulp.src(path.sass)
     .pipe(imagemin(path.options))
@@ -83,7 +78,7 @@ gulp.task('watch', function () {
   gulp.watch(path.jade, jadeTasks);
   gulp.watch(path.coffee, coffeeTasks);
   gulp.watch(path.sass, stylusTasks);
-  gulp.watch(path.images, imagesTasks)
+  gulp.watch(path.images, imagesTasks);
 });
 
 /* Start Webserver
