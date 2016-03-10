@@ -1,0 +1,1 @@
+var initPage;initPage=function(){console.log("init PAGE")};
