@@ -3,6 +3,10 @@ Gulp | Jade · Coffescript · SASS | With Stickyfooter
 
 Install Node modules
 
+From Terminal --> cd .../folder
+
+npm install
+
 sudo npm install -g gulp
 
 npm install --save-dev gulp-coffee
@@ -21,8 +25,6 @@ npm install --save-dev gulp-jshint
 
 npm install orchestrator
 
-
-From Terminal --> cd .../folder
 
 gulp images --> folder "images" optimized
 
