@@ -1,0 +1,33 @@
+$color: aqua;
+$other-color: aquamarine;
+
+$altura: 100%;
+$altura-footer: 100px;
+
+html, body {
+	height: $altura;
+}
+
+header {
+	background-color: $other-color;
+}
+  
+footer {
+	background-color: $color;
+}
+
+.wrapper {
+	min-height: $altura;
+	margin-bottom: -$altura-footer;
+}
+
+.wrapper:after {
+	content: "";
+	display: block;
+}
+
+.site-footer, .wrapper:after {
+	height: $altura;
+}
+
+

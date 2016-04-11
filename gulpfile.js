@@ -23,7 +23,7 @@ var path = {
   coffee: ['coffee/**/*.coffee'],
   js: 'public/assets/js/',
 
-  sass: ['sass/**/*.sass'],
+  sass: ['sass/**/*.{scss,sass}'],
   css: 'public/assets/css/',
 
   images: ['images/*.{gif,jpg,png,svg}'],
