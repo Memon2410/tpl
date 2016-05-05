@@ -8,10 +8,12 @@ var gulp = require('gulp'),
   connect = require('gulp-connect'),
   uglify = require('gulp-uglify'),
   imagemin = require('gulp-imagemin'),
+  js_obfuscator = require('gulp-js-obfuscator'),
 
   jadeTasks = ['jade'],
   coffeeTasks = ['coffee'],
   stylusTasks = ['sass'],
+  obsfucatorTasks = ['obsfucator']
   imagesTasks = ['images'];
 
 /* Paths
@@ -21,10 +23,17 @@ var path = {
   html: 'public',
 
   coffee: ['coffee/**/*.coffee'],
-  js: 'public/assets/js/',
+  js: 'js/',
 
   sass: ['sass/**/*.{scss,sass}'],
   css: 'public/assets/css/',
+
+  build: {
+    js: 'public/assets/js/',
+  },
+  src: {
+    js: 'js/**/*.js',
+  },
 
   images: ['images/*.{gif,jpg,png,svg}'],
   imgmin: 'public/assets/img/',
@@ -64,6 +73,14 @@ gulp.task('sass', function () {
    .pipe(gulp.dest(path.css));
 });
 
+/* Configuración de obsfucator 'JS'
+-------------------------------------------------------------------------------*/
+gulp.task('obsfucator', function() {
+  gulp.src(path.src.js)
+    .pipe(js_obfuscator({}, ['**/jquery-*.js']))
+    .pipe(gulp.dest(path.build.js))
+})
+
 /* Optimización de imágenes
 -------------------------------------------------------------------------------*/
 gulp.task('images', function() {
@@ -78,6 +95,7 @@ gulp.task('watch', function () {
   gulp.watch(path.jade, jadeTasks);
   gulp.watch(path.coffee, coffeeTasks);
   gulp.watch(path.sass, stylusTasks);
+  gulp.watch(path.src.js, obsfucatorTasks);
   gulp.watch(path.images, imagesTasks);
 });
 
