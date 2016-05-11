@@ -1,1 +1,1 @@
-var _0x6bc3=["\x69\x6E\x69\x74\x20\x50\x41\x47\x45\x20\x2E\x2E\x2D\x2D\x2D\x2E\x2D\x2E","\x6C\x6F\x67","\x4F\x4B\x21\x21\x21"];var initPage;initPage=function(){var _0x41f9x2;console[_0x6bc3[1]](_0x6bc3[0]),(_0x41f9x2=function(){alert(_0x6bc3[2])})()}
+var _0xedff=["\x69\x6E\x69\x74\x20\x50\x41\x47\x45","\x6C\x6F\x67","\x4F\x4B\x21\x21\x21"];var initPage;initPage=function(){var _0x8dedx2;console[_0xedff[1]](_0xedff[0]),(_0x8dedx2=function(){alert(_0xedff[2])})()}

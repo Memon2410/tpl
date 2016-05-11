@@ -1,6 +1,6 @@
 initPage = ->
 	
-  console.log 'init <PAGE></PAGE>'
+  console.log 'init PAGE'
 
   test = ->
     alert 'OK!!!'

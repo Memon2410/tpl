@@ -84,7 +84,7 @@ gulp.task('obsfucator', function() {
 /* Optimización de imágenes
 -------------------------------------------------------------------------------*/
 gulp.task('images', function() {
-  return gulp.src(path.sass)
+  return gulp.src(path.images)
     .pipe(imagemin(path.options))
     .pipe(gulp.dest(path.imgmin))
 });

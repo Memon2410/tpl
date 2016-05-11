@@ -1,1 +1,1 @@
-var initPage;initPage=function(){var i;console.log("init PAGE ..---.-."),(i=function(){alert("OK!!!")})()};
+var initPage;initPage=function(){var i;console.log("init PAGE"),(i=function(){alert("OK!!!")})()};
