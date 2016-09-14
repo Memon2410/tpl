@@ -16,6 +16,8 @@ html, body {
 }
 
 header {
+	width: 600px / 960px * 100%; /* 62.5%*/
+	margin: 0 auto;
 	background-color: $other-color;
 	@include border-radius(10px);
 }
@@ -36,7 +38,5 @@ footer {
 }
 
 .site-footer, .wrapper:after {
-	height: $altura;
+	height: $altura-footer;
 }
-
-
